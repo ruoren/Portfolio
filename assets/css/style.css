@@ -1,8 +1,13 @@
+.container{
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1rem;
-  line-height: 30pt;
+  line-height: 27pt;
   letter-spacing: .8px;
   color:#1a1b1c;
 }
@@ -29,7 +34,7 @@ nav {
 }
 h3{
   text-transform: uppercase;
-  font-family: museo-sans, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #5C657C;
@@ -37,7 +42,7 @@ h3{
 }
 h2{
   text-transform: uppercase;
-  font-family: museo-sans, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #5C657C;
@@ -46,7 +51,7 @@ h2{
 
 h1{
   text-transform: uppercase;
-  font-family: museo-sans, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #5C657C;
@@ -248,8 +253,9 @@ i {
 
 .carousel-indicators li{
   width: 10px;
-  /* height: 10px; */
+  height: 10px;
   border-radius: 100%;
+  padding-bottom: 0px;
 }
 
 .indic-black li{
@@ -404,7 +410,7 @@ body {
 }
 
 .highlight {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #E3BFC9 50%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #ECD5DB 50%);
 }
 
 .spanimg {
