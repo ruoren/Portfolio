@@ -33,6 +33,10 @@ nav {
   font-weight: lighter;
 }
 
+.navy:hover{
+  color:#1a1b1c;
+}
+
 h3{
   text-transform: uppercase;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -372,7 +376,7 @@ button:hover {
 }
 
 .navpad {
-  padding: 150% 0%;
+  padding: 120% 0%;
 }
 
 .sidenav {
