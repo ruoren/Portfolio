@@ -458,7 +458,6 @@ $(document).ready(function (){
 
 $(document).ready(function (){
   $("#anat_intro").click(function (){
-    console.log("miao");
     $('body').animate({
       scrollTop: $("#anat_intro_here").offset().top
       }, 2000);
