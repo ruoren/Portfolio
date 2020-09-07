@@ -310,7 +310,7 @@ i {
   text-decoration: underline;
 }
 
-button {
+button.hp_butt {
   border: none;
   background-color: white;
   color: black;
@@ -324,9 +324,27 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button.hp_butt:hover {
   background-color: black;
   color: white;
+}
+
+button {
+  border: none;
+  background-color: #5C657C;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
 }
 
 .rotate {
