@@ -514,3 +514,22 @@ $(document).ready(function(){
         return false;
     });
 });
+
+function textOverlay(id_scroll){
+  $("html, body").animate({ scrollTop: 0 }, 600);
+  return false;
+}
+
+$(document).ready(function(){
+  $("button").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
