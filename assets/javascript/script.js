@@ -516,6 +516,7 @@ $(document).ready(function(){
 });
 
 
+// MERCURY PROJECT PAGE
 
 $(document).ready(function(){
   $("a").on('click', function(event) {
@@ -523,10 +524,8 @@ $(document).ready(function(){
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
-        scrollTop: $(hash).offset().top-200
-      }, 800, function(){
-        window.location.hash = hash;
-      });
+        scrollTop: $(hash).offset().top - 200
+      }, 800);
     }
   });
 });
