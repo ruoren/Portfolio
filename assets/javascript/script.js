@@ -519,12 +519,12 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  $("button").on('click', function(event) {
+  $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top-200
       }, 800, function(){
         window.location.hash = hash;
       });
