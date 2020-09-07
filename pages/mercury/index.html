@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/rae2edr.css">
     <!-- library for arrow -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--scrolling animation stylesheet-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- my stylesheet -->
     <link href="../../assets/css/style.css" rel="stylesheet">
     <meta charset="utf-8">
@@ -24,6 +26,7 @@
     <title>Lauren Whittingham Portfolio</title>
   </head>
   <body>
+    <a href="#" id="scrolltop" style="display: none;"><span></span></a>
     <div class="container">
       <div class="row"><br></div>
       <div class="row"><br></div>
@@ -37,19 +40,21 @@
     </div>
     <!-- the nav bar bootstrap -->
     <nav class="navbar navbar-expand-sm justify-content-center sticky-top">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link navy" href="../../index.html">Home</a>
-        </li>
-        <li class="nav-item"><pre>       </pre></li>
-        <li class="nav-item">
-          <a class="nav-link navy activenav" href="../projects">Projects</a>
-        </li>
-        <li class="nav-item"><pre>       </pre></li>
-        <li class="nav-item">
-          <a class="nav-link navy" href="../aboutme">About</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link navy" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item"><pre>       </pre></li>
+          <li class="nav-item">
+            <a class="nav-link navy activenav" href="../projects">Projects</a>
+          </li>
+          <li class="nav-item"><pre>       </pre></li>
+          <li class="nav-item">
+            <a class="nav-link navy" href="../aboutme">About</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!--nav test-->
@@ -68,133 +73,190 @@
     <!-- the project content -->
     <div class="container">
       <!-- <h1 class="text-center">ANATOMAGE</h1> -->
-      <div class="row spanimg"><img class="img-fluid" src="../../assets/images/mercury_header.png" alt="Preview of Mercury Products."></div>
+      <div data-aos="zoom-out"><div class="row spanimg"><img class="img-fluid" src="../../assets/images/mercury_header.png" alt="Preview of Mercury Products."></div></div>
       <div class="row"><br></div>
       <div class="row">
-          <div class="col">
-            <br>
-            <h3 id ="anat_intro_here" class="tlt">Client</h3>
-            <p>numo: a <span class="highlight">fintech incubator</span> for a major Midwestern bank, PNC.  </p>
-            <br>
+        <div class="col-sm-6">
+          <div data-aos="fade-right" data-aos-offset="200">
+            <img class="img-fluid" src="../../assets/images/mercury_problem.png" alt="current CLO apps.">
           </div>
-          <div class="col">
-            <br>
-            <h3>My Role</h3>
-            <p>I was the <span class="highlight">product manager</span> for my team of five.</p>
-            <br>
-          </div>
-          <div class="col-sm-6">
+        </div>
+        <div class="col-sm-6">
+          <div data-aos="fade-up" data-aos-offset="200" data-aos-anchor-placement="top-bottom">
             <h1>Problem</h1>
             <p>Card-linked offers (CLO's) on debit cards were introduced by PNC, as a way for <span class="highlight">merchants to market themselves and consumers to save money</span>. However, these offers did not gain traction amongst bank customers. Our team was asked to explore the CLO space to <span class="highlight">discover unmet needs of the consumers and develop metrics to measure value of CLO's for merchants</span>.</p>
             <p>As they currently exist card linked offers (CLO’s) have two major issues:</p>
             <ul>
-              <li>They have low traction with consumers.</li>
-              <li>Merchants aren’t receiving meaningful metrics from these CLO’s.</li>
+              <li>They have <span class="highlight">low traction with consumers</span>.</li>
+              <li><span class="highlight">Merchants aren’t receiving meaningful metrics</span> from these CLO’s.</li>
             </ul>
           </div>
+
+          <div data-aos="fade-up" data-aos-offset="200" data-aos-anchor-placement="top-bottom">
+            <h3 id ="anat_intro_here" class="tlt">Client</h3>
+            <p>Our client numo is a child company of PNC, a bank based out of Pittsburgh.   <span class="highlight">numo acts as a fintech incubator</span>: they look to solve unrealized problems in finance and build innovative solutions for them using emerging technologies.</p>
+          </div>
+          <br>
+          <div data-aos="fade-up" data-aos-offset="200" data-aos-anchor-placement="top-bottom">
+            <h3>My Role</h3>
+            <p>In our team I served as the <span class="highlight">Product Lead</span> and helped guide our team’s vision for our final product.  I contributed equally to research and testing.  As Product Lead I <span class="highlight">developed our unique value propositions</span>, and during the design phase I <span class="highlight">led the design of our consumer app</span>. </p>
+          </div>
+        </div>
       </div>
       <div class="row"><br></div>
       <div class="row"><br></div>
       <div class="row">
-          <div class="col-sm-6">
-            <img class="img-fluid" src="../../assets/images/mercury_solution.png" alt="the merchant and consumer apps">
+        <div class="col-sm-6">
+          <div data-aos="fade-right" data-aos-offset="200">
+            <img class="img-fluid" src="../../assets/images/mercury_solution2.png" alt="the merchant and consumer apps">
           </div>
-          <div class="col-sm-6">
+        </div>
+        <div class="col-sm-6">
+          <div data-aos="fade-up" data-aos-offset="200" data-aos-anchor-placement="top-bottom">
             <h1>Solution</h1>
-            <p>After extensive research, ideation, testing, and redesign, we created a two part solution to address both our stakeholders.   The merchant side focuses on the creation and control of CLO’s as well as the metrics specific to these CLO’s and a consumer side focused on sending and receiving deals.</p>
-            <p>Mercury is a tool for small local merchants that allows them to use CLO’s to market themselves more efficiently to their preferred market segments.  They can see actionable metrics and insights allowing them to adjust their marketing techniques.</p>
-            <p>As result the CLO’s consumers receive are more targeted to them directly- and fit their natural shopping behavior.  The consumer app not only allows for users to send and receive these deals but discover new businesses and form a community supporting local businesses.  </p>
+            <p>After extensive research, ideation, testing, and redesign, we created a two part solution to address both our stakeholders.   The <span class="highlight">merchant side focuses on the creation and control of CLO’s as well as the metrics</span> specific to these CLO’s and a <span class="highlight">consumer side focused on sending and receiving deals</span>.</p>
+            <p>Mercury is a tool for small local merchants that <span class="highlight">allows them to use CLO’s to market themselves more efficiently</span> to their preferred market segments.  They can see <span class="highlight">actionable metrics</span> and insights allowing them to adjust their marketing techniques.</p>
+            <p>As result the <span class="highlight">CLO’s consumers receive are more targeted to them directly</span>- and fit their natural shopping behavior.  The consumer app not only allows for users to send and receive these deals but <span class="highlight">discover new businesses and form a community supporting local businesses</span>.  </p>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 10%"><br></div>
+      <div class="row" style="height: 30%"><br></div>
+      <div class="row" style="height: 30%"><br></div>
+      <div data-aos="zoom-out"><div class="row spanimg"><img class="img-fluid" src="../../assets/images/mercury_overview.png" alt="an image of someone making a purchase with their card on their phone"></div></div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row" style="height: 10%"><br></div>
+      <div class="row">
+        <div data-aos="fade-up" data-aos-offset="200" data-aos-anchor-placement="top-bottom">
+          <h1>What is a CLO?</h1>
+          <p>In short Card-linked offers (CLO’s) are <span class="highlight">deals that can be redeemed with the use of a card</span>.  The user signs up for a network that offers these deals, and links their card.  In this way, they are able to <span class="highlight">receive the deal automatically, usually as cash back</span>.  Although most people have never heard of CLO’s, they are the second most popular advertising channel with <span class="highlight">$1-10 billion in sales linked to CLO’s</span>.  CLO’s are offered through two mediums: banking (such as PNC) and what are known as publisher apps (Dosh, Rakuten, Pei, etc.).</p>
+        </div>
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row"><div data-aos="fade-up" data-aos-offset="200" data-aos-anchor-placement="top-bottom"><h1>Current CLO's</h1></div></div>
+      <div class="row">
+          <div class="col-sm-6">
+            <div data-aos="fade-right" data-aos-offset="200"><img class="img-fluid" src="../../assets/images/pncapp.png" alt="how CLO appears in PNC app"></div>
+          </div>
+          <div class="col-sm-6">
+            <div data-aos="fade-up" data-aos-offset="200" data-aos-anchor-placement="top-bottom">
+              <h2>Bank CLO's</h2>
+              <ul>
+                <li>Bank offers <span class="highlight">must be activated before they can be applied</span> to the user’s purchase.</li>
+                <li>Banks offer <span class="highlight">limited deals, with an expiration date</span> of about 2 weeks from activation.</li>
+                <li>Users save money in the form of <span class="highlight">cash back which averages around 5%</span>.</li>
+                <li>B2B (business-to-business) companies like Cardlytics, partner with banking institutions to <span class="highlight">act as a middle man between banks and merchants</span>.</li>
+              </ul>
+            </div>
           </div>
       </div>
-      <div class="row" style="height: 10%"><br></div>
-      <div class="row" style="height: 30%"><br></div>
-      <div class="row" style="height: 30%"><br></div>
-      <div class="row spanimg"><img class="img-fluid" src="../../assets/images/anatomage_original_header.png" alt="section of original anatomage website"></div>
-      <div class="row"><br></div>
-      <div class="row"><br></div>
-      <div class="row" style="height: 10%"><br></div>
       <div class="row">
-        <h1>Anatomage Original Homepage</h1>
-        <p>The original homepage faces some issues in terms of design and usability:</p>
-        <ul>
-          <li>
-            <b>Lack of navigation:</b> The current <span class="highlight">header navigation is limited</span>- since product purchase is important a call number should be primary.
-          </li>
-          <li>
-            <b>Lack of Information:</b> The first <span class="highlight">images and text don’t explain what product is</span> or its capabilities and no information besides department name is provided to the users.
-          </li>
-          <li>
-            <b>Layout:</b> The user <span class="highlight">can’t see the name of the different products/departments</span> with the current page break.  The <span class="highlight">footer can be condensed</span> and the contact section can be linked to new page.
-          </li>
-          <li>
-            <b>Mobile:</b> For the mobile version about <span class="highlight">75% of the page is the footer</span>.  It’s a lot of scrolling and it’s easy for the user to get lost.  The mobile version has many of the same pitfalls as the desktop version including lack of information.
-          </li>
-        </ul>
+          <div class="col-sm-6">
+            <div data-aos="fade-right" data-aos-offset="200"><img class="img-fluid" src="../../assets/images/doshapp.png" alt="how CLO appears on dosh app"></div>
+          </div>
+          <div class="col-sm-6">
+            <div data-aos="fade-up" data-aos-offset="200" data-aos-anchor-placement="top-bottom">
+              <h2>Publisher CLO's</h2>
+              <ul>
+                <li>Publisher apps automatically grant <span class="highlight">cash back deals for attached credit/debit cards</span>.</li>
+                <li>Users have <span class="highlight">access to all deals</span>, and these deals have <span class="highlight">no expiration date</span>.</li>
+                <li>On Dosh the <span class="highlight">average cash back is 2-3%</span>.</li>
+                <li>Publisher apps either have <span class="highlight">direct connections to merchants</span> or access them through <span class="highlight">partnerships with rewards programs</span> like Internation Hotels Group or Rewards Network.</li>
+              </ul>
+            </div>
+          </div>
       </div>
       <div class="row"><br></div>
+      <div class="row"><br></div>
       <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col"><img class="img-fluid" src="../../assets/images/anatomage_original.png"></div>
-        <div class="col-sm-1"></div>
+        <h1>Stakeholders</h1>
+        <p>Based off of our background research and what we learned from numo, we created a stakeholder diagram to help us better understand the ecosystem in which CLO’s existed in.  In it we have <span class="highlight">PNC and publishers as the companies offering CLO’s</span>, and <span class="highlight">Cardlytics as the middleman for PNC</span>.  In orange we have highlights our two main stakeholders:</p>
+        <ol>
+          <li><b>Merchants:</b> These are <span class="highlight">business owners who leverage CLO’s</span> as a form of marketing.  They want to attract more customers with deals.</li>
+          <li><b>Consumers:</b> These are <span class="highlight">individuals who use CLO’s</span> to get deals on their purchases.</li>
+        </ol>
+      </div>
+      <div class="row">
+        <img class="img-fluid" src="../../assets/images/numo_stakeholders.png">
       </div>
       <div class="row"><br></div>
       <div class="row"><br></div>
       <div class="row"><br></div>
       <div class="row spanimg">
-        <img class="img-fluid" src="../../assets/images/anatomage_design_header.png">
+        <img class="img-fluid" src="../../assets/images/mercury_research.png">
       </div>
       <div class="row"><br></div>
       <div class="row"><br></div>
       <div class="row"><br></div>
       <div class="row">
-        <h1>Redesigning</h1>
-        <p>Although this was a conceptual redesign, I wanted to implement the following design restrictions based on my knowledge of the CEO (primary stakeholder):</p>
+        <h1>Consumer Research</h1>
+        <p>To better understand our users we carried out an intensive set of research that involved <span class="highlight">guerilla semi-structured interviews, booth interviews using TAP (Think Aloud Protocol), surveys, and interviews</span>.  We came away with many insights into consumer motivations and behaviors in regards to CLO’s and I’ve highlighted the most important below.</p>
+        <h3>Insights</h3>
         <ul>
-          <li>The <span class="highlight">logo should remain the same</span>.</li>
-          <li>The color scheme will <span class="highlight">remain as shades of purple</span>.</li>
-          <li>The website needs to have a <span class="highlight">purely professional feel</span>.</li>
+          <li><span class="highlight">Deals can be viewed as a way to manipulate</span> consumer spending, rather than saving money.</li>
+          <li><span class="highlight">Immediate and significant value must be shown</span> to users in order for them to utilize CLO apps.</li>
+          <li><span class="highlight">Offers need to be personalized</span> in order for people to take advantage of them.  Users want offers that fit their lifestyles.</li>
+          <li>However, <span class="highlight">security and privacy are important concerns</span> for consumers when adopting new tech.</li>
+          <li><span class="highlight">Value created must exceed effort spent</span> for consumers to implement CLOs more.  Users of CLO apps saw obtaining deals as a tradeoff between time/effort and money and their experience with an app was judged by this standard.</li>
+          <li>For those that used PNC, none of them really used the offers- they <span class="highlight">thought the bank CLO's were irrelevant or too much effort</span>.</li>
         </ul>
-        <p>I also wanted to consider responsive web design and create a mobile version in addition to desktop.  As shown in the original screenshots, the mobile version faced many of the same issues.</p>
-        <h3>Design Process</h3>
-        <ol>
-          <li>I created a <span class="highlight">two versions of a low fidelity desktop wireframe and one mobile wireframe</span> in Sketch.  These wireframes were very basic, with only blocks, and no color to get a sense of layout.</li>
-          <li>From those I picked one, and made it a little higher fidelity but still <span class="highlight">low fidelity- adding in text and logos</span>.</li>
-          <li>I <span class="highlight">developed a style guide</span> (based on the previously mentioned design constraints) where I decided on the font and colors that I would use in the the high fidelity versions.  I then <span class="highlight">applied these colors to create the mid-fidelity wireframe</span>.</li>
-          <li>From there I started <span class="highlight">adding in pictures and text</span>.  At this point I realized I felt the layout was too crowded.  Also, I felt the site was lacking a personal touch.  I decided to <span class="highlight">redesign it to add in a section about support, and separate out the sections more</span>.</li>
-          <li>For the final iteration, I <span class="highlight">fixed some more issues with crowding</span> in the hero gallery, and <span class="highlight">resized to font</span>.</li>
-        </ol>
       </div>
       <div class="row"><br></div>
       <div class="row">
-        <div class="col-sm-3"></div>
+        <img class="img-fluid" src="../../assets/images/mercury_research_pic2.jpg">
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row">
+        <h1>Merchant Research</h1>
+        <p>We used a variety of methods to learn more about one of our primary stakeholders: the merchant.  We also <span class="highlight">chose to focus on smaller merchants</span> as they are underrepresented and have the most to gain in the CLO space, and stand to gain the most from optimized CLO programs. The methodologies we used to gain a deeper understanding of merchants were <span class="highlight">semi-structured interviews with merchants </span>, including an interview with a super-merchant (a merchant with extensive experience in marketing).  </p>
+        <h3>Insights</h3>
+        <ul>
+          <li>Merchants need a way to <span class="highlight">calculate value of marketing using CLOs</span>. They do not trust the existing reports by rewards programs and believe that they take credit of their returning customers.</li>
+          <li><span class="highlight">POS (Point of Sale)</span> systems can potentially help merchants <span class="highlight">gain trust in rewards programs</span>.</li>
+          <li>Some local merchants are <span class="highlight">struggling to compete with online retail giants</span> like Amazon.</li>
+          <li>Merchants <span class="highlight">want more control</span> over where their business is advertised.</li>
+          <li>Symbiotic <span class="highlight">partnerships with other local businesses</span> targeting similar customer segments is one <span class="highlight">preferred way for marketing</span>.</li>
+        </ul>
+      </div>
+      <div class="row"><br></div>
+      <div class="row spanimg">
+        <img class="img-fluid" src="../../assets/images/ideationtoprototypes_header.png">
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row">
+        <h1>Ideating</h1>
+        <p>Our first step in the design process was ideation.  We had to take the insights we had synthesized from our consumer and merchant testings and develop them into a product that would address each stakeholders pain-points.  We did <span class="highlight">several rounds of ideating to take our findings and turn them into potential ideas and features</span>.</p>
+        <h3>Ideation Process</h3>
+        <ul>
+          <li><b>Crazy 8’s:</b> We did several rounds of crazy 8’s- an activity where members think of the most “out there” ideas based on findings.</li>
+          <li><b>Data Flows:</b> Because our problem involved delivering meaningful metric to merchants, we created data to flow to explore how we could use CLO’s and CLO technology to offer unique data to merchants that they wouldn’t be able to get from their POS.</li>
+          <li><b>Mashup Activity:</b> Additionally we did a mashup activity, where we thought of different problems, mediums, tools, etc, and mixed them up to inspire new ideas.  </li>
+        </ul>
+      </div>
+      <div class="row"><br></div>
+      <div class="row">
         <div class="col">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators indic-black">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active container">
-                <img class="d-block w-100" alt="first low fidelity screen" src="../../assets/images/anatomage_lf.png" alt="First slide" >
+                <img class="d-block w-100" alt="first low fidelity screen" src="../../assets/images/mercury_ideation1.png" alt="First slide" >
               </div>
               <div class="carousel-item container">
-                <img class="d-block w-100" alt="second low fidelity screen" src="../../assets/images/anatomage_lf2.png" alt="Second slide">
+                <img class="d-block w-100" alt="second low fidelity screen" src="../../assets/images/mercury_ideation2.png" alt="Second slide">
               </div>
               <div class="carousel-item container">
-                <img class="d-block w-100" alt="third low fidelity screen" src="../../assets/images/anatomage_lf3.png" alt="Third slide">
-              </div>
-              <div class="carousel-item container">
-                <img class="d-block w-100" alt="medium fidelity screen" src="../../assets/images/anatomage_mf.png" alt="fourth slide">
-              </div>
-              <div class="carousel-item container">
-                <img class="d-block w-100" alt="first high fidelity screen" src="../../assets/images/anatomage_hf2.png" alt="fifth slide">
-              </div>
-              <div class="carousel-item container">
-                <img class="d-block w-100" alt="final high fidelity screen" src="../../assets/images/Anatomage_HF.png" alt="sixth slide">
+                <img class="d-block w-100" alt="third low fidelity screen" src="../../assets/images/mercury_ideation3.png" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -207,32 +269,284 @@
             </a>
           </div>
         </div>
-        <div class="col-sm-3"></div>
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row">
+        <h1>Scenarios and Storyboards</h1>
+        <p>To test our many ideas for both of our stakeholders we wrote scenarios for the ideas we generated and liked.  We then drew storyboards for each of these scenarios, which we tested with merchants and consumers to see which of these ideas resonated or evoked a response.</p>
+        <h3>Ideation Process</h3>
+        <ul>
+          <li><b>Crazy 8’s:</b> We did several rounds of crazy 8’s- an activity where members think of the most “out there” ideas based on findings.</li>
+          <li><b>Data Flows:</b> Because our problem involved delivering meaningful metric to merchants, we created data to flow to explore how we could use CLO’s and CLO technology to offer unique data to merchants that they wouldn’t be able to get from their POS.</li>
+          <li><b>Mashup Activity:</b> Additionally we did a mashup activity, where we thought of different problems, mediums, tools, etc, and mixed them up to inspire new ideas.  </li>
+        </ul>
+      </div>
+      <div class="row">
+        <img class="img-fluid" src="../../assets/images/mercury_storyboards.png">
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row">
+        <h1>Merchant Interviews</h1>
+        <p>Additionally, we conducted interview with merchants to determine <span class="highlight">what power they wanted to have over CLO’s</span> and what type of <span class="highlight">deals they preferred as well as what type of metrics</span> they wanted to see.  We showed them some low fidelity samples of potential metrics as well as asked questions regarding what types of deals they would want to offer and to whom.</p>
+        <h3>Findings</h3>
+      </div>
+      <div class="row">
+        <ul>
+          <li>Merchants wanted to have <span class="highlight">full control over the deals</span> they offered.</li>
+          <li>Merchants had <span class="highlight">unique wants for deals</span> they offered- meaning <span class="highlight">deals had to be customizable</span> to an extent.</li>
+          <li>Merchant were interested in this <span class="highlight">unique data: traffic, top list information, items vs return customers, and demographic info</span>.  </li>
+        </ul>
+      </div>
+      <div class="row">
+        <img class="img-fluid" src="../../assets/images/mercury_merchant_interview.png">
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row">
+        <h1>Iterative Design Process</h1>
+        <p>From our merchant interviews, storyboard testing, and ideating we had finally settled on the ideas we wanted to create.  It was now time to start designing.   We did <span class="highlight">several cycles of design-testing-and iteration for each of our products</span>.</p>
+        <h3>Design Process</h3>
+        <ol>
+          <li>Based on our storyboarding we <span class="highlight">picked out several features we knew noticed evoked interest</span> from interviewees and we individually <span  class="highlight">created sketches of these features</span>.</li>
+          <li>From these sketches we picked out different screens and <span class="highlight">created low fidelity wireframes</span> in Figma.</li>
+          <li>We <span class="highlight">tested these screens with users</span> to see which features they were most and least interested in.  Based off of their responses we <span class="highlight">narrowed down the functionality of our consumer app</span>.  We found that users were especially <span class="highlight">interested in a social aspect</span>.</li>
+          <li>We then took the idea to <span class="highlight">mid-fidelity, building out more screens and making it interactive</span>.</li>
+          <li>Because the <span class="highlight">metrics on our merchant product is limited by the functionality of the consumer app</span>, once we had committed to our final features for the consumer app, we started <span class="highlight">developing the mid-fidelity wireframes for the merchant</span>.</li>
+          <li>From here we conducted <span class="highlight">two rounds more rounds of design, testing, and iteration</span>.  Each time we analyzed the feedback, determined what updates/changes were needed, and redesigned accordingly, going up in fidelity each iteration.  </li>
+        </ol>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators indic-black">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active container">
+                <img class="d-block w-100" alt="first low fidelity screen" src="../../assets/images/mercury_prototyping.png" alt="First slide" >
+              </div>
+              <div class="carousel-item container">
+                <img class="d-block w-100" alt="second low fidelity screen" src="../../assets/images/mercury_cons_iterations.png" alt="Second slide">
+              </div>
+              <div class="carousel-item container">
+                <img class="d-block w-100" alt="third low fidelity screen" src="../../assets/images/mercury_merch_iterations.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon prev-icon-black" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon next-icon-black" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>Consumers</h1>
+        </div>
+        <div class="col-sm-6">
+          <h2 style="text-align: center">35+</h2>
+          <h3 style="text-align: center">Interviews and Usability Tests</h3>
+        </div>
       </div>
       <div class="row"><br></div>
       <div class="row">
         <div class="col-sm-6">
-          <h1>Final Design</h1>
-          <ul>
-            <li>
-              <b>Lack of navigation:</b> The new design has <span class="highlight">improved header navigation</span> with a call button.
-            </li>
-            <li>
-              <b>Lack of Information:</b> Now <span class="highlight">each product has a clear description</span>.
-            </li>
-            <li>
-              <b>Layout:</b> The page now starts with a <span class="highlight">carousel that rotates to show different products</span>.  The new <span class="highlight">footer has been reduced</span>, and the <span class="highlight">more relevant content has been added</span> to flesh out the page.
-            </li>
-            <li>
-              <b>Mobile:</b> The mobile <span class="highlight">footer has been greatly reduced</span> and the page has been redesigned in a responsive way.
-            </li>
-          </ul>
-          <p><b>Takeaways:</b> One thing I learned from this was to <span class="highlight">do more paper and pencil prototyping</span>.  I think if I had done this in the beginning I would have found the right layout earlier on.   Trust the process!  Also throughout this process I asked my peers for critique, and this <span class="highlight">feedback was invaluable to helping me not only improve the design but my skills as well</span>.</p>
+          <h1>Merchants</h1>
         </div>
         <div class="col-sm-6">
-          <img class="img-fluid" src="../../assets/images/Anatomage_both_ HF.png">
+          <h2 style="text-align: center">20+</h2>
+          <h3 style="text-align: center">Interviews and Usability Tests</h3>
         </div>
       </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row spanimg">
+        <img class="img-fluid" src="../../assets/images/mercury_finalproducts.png">
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row">
+        <h1>mercury</h1>
+        <p>Its been 8 months since we started this project.  As a team we have conducted intensive research, done many types of ideating, done several rounds of prototyping, testing, and iterating.  We are proud of all the hard work we have put in, and our final product Mercury, named after the Roman god of merchants and messaging. </p>
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row">
+        <h1>Merchant app</h1>
+        <p>Mercury is a tool for small local merchants that <span class="highlight">allows them to use CLO’s to market themselves more efficiently</span> to their preferred market segments.  They can see <span class="highlight">actionable metrics and insights</span> allowing them to adjust their marketing techniques.</p>
+        <h3>Features</h3>
+        <ol>
+          <li>Shows <span class="highlight">unique metrics</span> possible through the combination of POS data and CLO’s: traffic, top list data, items vs return customers, and demographic info.</li>
+          <li>Allows business owners to <span class="highlight">send deals to users directly</span> (with the ability to narrow down audience based on interests and other factors), as well as <span class="highlight">create deals for users to send to their friends</span>.</li>
+          <li>Shows <span class="highlight">performance stats for the deals</span> the owner sends offers, so they can compare efficacy, and adjust accordingly.</li>
+          <li>Enables merchants to <span class="highlight">send messages to customers</span> about promotions, new items, updates, etc.</li>
+          <li>Sets up the <span class="highlight">information for the business page</span> that appears on the consumer app.</li>
+        </ol>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators indic-black">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active container">
+                <img class="d-block w-100" alt="first low fidelity screen" src="../../assets/images/mercury_merch_metrics.png" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Metrics</h4>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <img class="d-block w-100" alt="second low fidelity screen" src="../../assets/images/mercury_merch_deals.png" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Deals and Performance</h4>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <img class="d-block w-100" alt="third low fidelity screen" src="../../assets/images/mercury_merch_messages.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Messages</h4>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <img class="d-block w-100" alt="third low fidelity screen" src="../../assets/images/mercury_merch_profile.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Business Page</h4>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon prev-icon-black" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon next-icon-black" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row">
+        <h1>Consumer app</h1>
+        <p>Through Mercury, consumers <span class="highlight">receive CLO’s that are more targeted</span> to them directly- and fit their natural shopping behavior.  The consumer app not only allows for users to <span class="highlight">send and receive these deals but discover new businesses and form a community supporting local businesses</span>.</p>
+        <h3>Features</h3>
+      </div>
+      <div class="row">
+        <ol>
+          <li>Enables users to <span class="highlight">discover new businesses</span> to patronize through the map and list (with the ability to filter and search).</li>
+          <li>Allows users to <span class="highlight">receive deals from friends and businesses</span>, and to also <span class="highlight">send deals to friends</span>.</li>
+          <li>Enables users to <span class="highlight">create top five lists</span> based on business type (restaurant, service, store), location, and business type (salon, brunch, market).</span>
+          <li>Shows <span class="highlight">updates and posts from businesses</span> as well as new <span class="highlight">reviews and list updates from friends</span>.</li>
+          <li>Has the functionalities of <span class="highlight">adding friends, following businesses, writing reviews, viewing past restaurants visited</span>.</li>
+        </ol>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators indic-black">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active container">
+                <img class="d-block w-100" alt="first low fidelity screen" src="../../assets/images/mercury_cons_discover.png" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Discover</h4>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <img class="d-block w-100" alt="second low fidelity screen" src="../../assets/images/mercury_cons_deals.png" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Send and Receive Deals</h4>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <img class="d-block w-100" alt="third low fidelity screen" src="../../assets/images/mercury_cons_list.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Lists</h4>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <img class="d-block w-100" alt="third low fidelity screen" src="../../assets/images/mercury_cons_reviews.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Feed and Reviews</h4>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon prev-icon-black" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+              <span class="carousel-control-next-icon next-icon-black" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="carousel-item">
+          <img src="..." alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>...</h5>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row">
+        <h1>Unique Value Propositions</h1>
+        <p>Our projects differentiates itself from other CLO’s in how it utilizes the POS.  With POS integration we are able to offer three values that differentiate Mercury from both publisher and bank CLO’s.</p>
+      </div>
+      <div class="row">
+        <ol>
+          <li><span class="highlight">Users can onboard through the POS</span>.  This makes signing up effortless and inspires trust from the users because not only is the merchant endorsing the app, but so is the POS.  They also are swiping their card somewhere they would already be using it.</li>
+          <ul>
+            <li><b>Insight:</b> Value created must exceed effort spent.</li>
+          </ul>
+          <li>User can <span class="highlight">save money directly on their purchase</span>, as opposed through cash back which is the traditional form of deals.</li>
+          <ul>
+            <li><b>Insight:</b> Immediate and significant value must be shown.</li>
+          </ul>
+          <li>Merchants get more <span class="highlight">detailed and more unique metrics from the combination of data from CLO’s and the POS</span>.</li>
+          <ul>
+            <li><b>Insight:</b> Merchants need a way to calculate value of marketing using CLOs.</li>
+          </ul>
+        </ol>
+      </div>
+      <div class="row">
+        <img class="img-fluid" src="../../assets/images/mercury_pos.png">
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
+      <div class="row">
+        <h1>Feedback from stakeholders</h1>
+      </div>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LW1HcalrdxI" allowfullscreen></iframe>
+      </div>
+      <div class="row"><br></div>
+      <div class="row"><br></div>
     </div>
 
 
@@ -248,6 +562,10 @@
     <script src="../../assets/javascript/script.js"></script>
     <script src="../../assets/javascript/jquery.lettering.js"></script>
     <script src="../../assets/javascript/jquery.textillate.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 
