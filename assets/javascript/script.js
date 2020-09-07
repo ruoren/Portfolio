@@ -434,7 +434,8 @@ function overlayRem(){
 //source: https://codepen.io/bewley/pen/revRQv
 
 $(window).scroll(function(){
-    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250);
+    $("#scroll").css("opacity", 1 - $(window).scrollTop() / 250);
+    $("#scroll2").css("opacity", 4.2 - $(window).scrollTop() / 250);
   //250 is fade pixels
 });
 
@@ -515,10 +516,7 @@ $(document).ready(function(){
     });
 });
 
-function textOverlay(id_scroll){
-  $("html, body").animate({ scrollTop: 0 }, 600);
-  return false;
-}
+
 
 $(document).ready(function(){
   $("button").on('click', function(event) {
